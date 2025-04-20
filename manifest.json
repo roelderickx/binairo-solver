@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Binairo Solver",
+  "version": "1.0",
+
+  "description": "Solves binairo puzzles on puzzle-binairo.com",
+
+  "icons": {
+    "256": "icons/binairo-solver.svg",
+    "128": "icons/binairo-solver.svg",
+    "64": "icons/binairo-solver.svg",
+    "48": "icons/binairo-solver.svg",
+    "32": "icons/binairo-solver.svg",
+    "16": "icons/binairo-solver.svg"
+  },
+
+  "content_scripts": [
+    {
+      "world": "MAIN",
+      "matches": ["https://www.puzzle-binairo.com/*"],
+      "js": ["solver.js"]
+    }
+  ]
+}
+
